@@ -1,0 +1,868 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, "Yu Gothic", sans-serif;
+  min-height: 100vh;
+  background-image: url("images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.18);
+  z-index: -1;
+}
+
+.hero {
+  text-align: center;
+  padding: 45px 20px 25px;
+  color: #10245c;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 5px;
+  height: auto;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.3));
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-family: "Times New Roman", "Yu Mincho", serif;
+  margin-bottom: 6px;
+  text-shadow: 2px 2px 6px rgba(255,255,255,0.8);
+}
+
+.jp-title {
+  font-size: 30px;
+  color: #6b49b6;
+  margin-bottom: 6px;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(255,255,255,0.9);
+}
+
+.sub-title {
+  font-size: 22px;
+  color: #10245c;
+  text-shadow: 1px 1px 5px rgba(255,255,255,0.9);
+}
+
+.level-container {
+  width: 80%;
+  max-width: 1180px;
+  margin: 35px auto 60px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+
+.level-card {
+  min-height: 310px;
+  text-decoration: none;
+  color: #16224a;
+  background: rgba(255,255,255,0.18);
+  border-radius: 24px;
+  padding: 22px 16px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  /* Hiệu ứng kính */
+  border: 1px solid rgba(255,255,255,.5);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  /* Đổ bóng */
+  box-shadow:
+      0 18px 40px rgba(0,0,0,.20),
+      0 8px 20px rgba(255,255,255,.25);
+
+  transition: all .35s ease;
+}
+
+.level-card:hover {
+  transform:translateY(-12px) scale(1.03);
+    box-shadow:
+    0 30px 60px rgba(0,0,0,.35);
+}
+
+.level-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  z-index: -2;
+  transition:.4s;
+}
+
+.level-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.2),
+    rgba(255,255,255,0.55)
+  );
+  z-index: -1;
+}
+
+.n5::before {
+  background-image: url("images/n5-spring.png");
+}
+
+.n4::before {
+  background-image: url("images/n4-summer.png");
+}
+
+.n3::before {
+  background-image: url("images/n3-autumn.png");
+}
+
+.n2::before {
+  background-image: url("images/n2-winter.png");
+}
+
+.n1::before {
+  background-image: url("images/n1-temple.png");
+}
+
+.icon {
+   width: 78px;
+  height: 78px;
+  font-size: 38px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.n5 .icon { background: #e84f91; }
+.n4 .icon { background: #54a63e; }
+.n3 .icon { background: #f47a24; }
+.n2 .icon { background: #2f86d9; }
+.n1 .icon { background: #6550b8; }
+
+.level-card p {
+  font-size: 22px;
+  font-family: "Times New Roman",Times, serif;
+  margin-bottom: 5px;
+}
+
+.level-card h2 {
+  font-size: 54px;
+  font-family: "Times New Roman", serif;
+  margin-bottom: 12px;
+}
+
+.n5 h2 { color: #e84f91; }
+.n4 h2 { color: #1f7507; }
+.n3 h2 { color: #f42424; }
+.n2 h2 { color: #2f86d9; }
+.n1 h2 { color: #6550b8; }
+
+.level-card span {
+  display: block;
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+
+.level-card small {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+
+.level-card button {
+  border: 4px solid transparent;
+  border-radius:20px;
+  color: white;
+  padding: 11px 26px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.n5 button { background: #e84f91; }
+.n4 button { background: #54a63e; }
+.n3 button { background: #f47a24; }
+.n2 button { background: #2f86d9; }
+.n1 button { background: #6550b8; }
+
+@media (max-width: 1100px) {
+  .level-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+  .jp-title {
+    font-size: 22px;
+  }
+  .level-container {
+    grid-template-columns: 1fr;
+  }
+}
+.quote{
+    text-align:center;
+    margin:80px auto 50px;
+    width:90%;
+}
+
+.quote-jp{
+    font-size:24px;   /* nhỏ hơn */
+    color:#7B3FB6;
+    font-weight:bold;
+    font-family:"Yu Mincho","Yu Gothic","Noto Serif JP",serif;
+    letter-spacing:1px;
+    text-shadow:1px 1px 5px rgba(255,255,255,.7);
+    font-style:italic;
+}
+
+.quote-vn{
+    margin-top:4px;   /* gần dòng trên hơn */
+    font-size:26px;
+    color:#222;
+    font-family:'Times New Roman', Times,serif;
+    font-style:italic;
+    text-shadow:2px 2px 6px rgba(255,255,255,.7);
+}
+
+/* ===============================
+   JLPT PAGE
+================================== */
+
+.page-header {
+  text-align: center;
+  padding: 50px 20px 20px;
+}
+.back-home {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 8px 20px rgba(0,0,0,.2);
+}
+.page-title {
+  font-size: 80px;
+  font-family: "Times New Roman", "Yu Mincho", serif;
+  text-align: center;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px rgba(255,255,255,.9);
+}
+.page-sub {
+  font-size: 22px;
+  color: #333;
+  margin-top: 14px;
+  font-family: "Yu Mincho", serif;
+}
+
+.page-sub-vn {
+  font-size: 20px;
+  color: #222;
+  margin-top: 5px;
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+}
+
+.card-container{
+  width:90%;
+  max-width:1200px;
+  margin:40px auto 70px;
+}
+
+.lesson-card {
+  min-height: 210px;
+  text-decoration: none;
+  background: rgba(255,255,255,.52);
+  border-radius: 26px;
+  padding: 30px 20px;
+  text-align: center;
+  color: #16224a;
+  box-shadow: 0 15px 35px rgba(0,0,0,.18);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,.65);
+  transition: all .35s ease;
+  width:240px;
+}
+.lesson-icon {
+  width: 78px;
+  height: 78px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+}
+
+.bottom-brand {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+.brand-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  gap: 6px;
+}
+
+.brand-logo {
+  width: 72px;
+  height: auto;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.25));
+}
+
+.brand-title {
+  font-size: 17px;
+  font-family: "Times New Roman", "Yu Mincho", serif;
+  font-weight: bold;
+  color: #10245c;
+  line-height: 1;
+  white-space: nowrap;
+  text-align: center;
+  text-shadow: 1px 1px 5px rgba(255,255,255,0.85);
+}
+
+.card-row{
+  display:flex;
+  justify-content:center;
+  gap:24px;
+  margin-bottom:24px;
+  flex-wrap:wrap;
+}
+
+.center-row{
+  justify-content:center;
+}
+
+.lesson-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 25px 55px rgba(0,0,0,.28);
+}
+
+.lesson-card h2{
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.lesson-card p {
+  font-size: 18px;
+  color: #555;
+  font-weight: bold;
+}
+
+.vocab-card .lesson-icon { background: #e84f91; }
+.kanji-card .lesson-icon { background: #6550b8; }
+.grammar-card .lesson-icon { background: #f42424; }
+.reading-card .lesson-icon { background: #2f86d9; }
+.listening-card .lesson-icon { background: #1b6806; }
+.conversation-card .lesson-icon { background: #20b2aa; }
+.test-card .lesson-icon { background: #34495e; }
+
+/*N5 Page*/
+.n5-body{
+  background-image: url("images/n5-backgroud.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.n5-color {
+  color: #e84f91;
+}
+
+.n5-bg {
+  background: rgba(232, 79, 145, 0.9);
+}
+
+/*N4 Page*/
+.n4-body{
+  background-image: url("images/n4-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.n4-color {
+  color: #056430;
+}
+
+.n4-bg{
+  background: rgba(4, 80, 27, 0.9);
+}
+
+/*N3 Page*/
+.n3-body{
+  position: relative;
+
+  background-image: url("images/n3-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.n3-body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:rgba(255,255,255,0.12);   /* chỉnh độ mờ */
+  pointer-events:none;
+  z-index:-1;
+}
+
+.n3-color {
+  color: #cf2a0d;
+}
+
+.n3-bg{
+  background: rgba(233, 7, 7, 0.9);
+}
+
+/*N2 Page*/
+.n2-body{
+  background-image: url("images/n2-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.n2-color {
+  color: #0d24f3;
+}
+
+.n2-bg{
+  background: rgba(7, 11, 233, 0.9);
+}
+
+/*N1 Page*/
+.n1-body{
+  background-image: url("images/n1-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.n1-color {
+  color: #7b06b1;
+}
+
+.n1-bg{
+  background: rgba(118, 3, 146, 0.9);
+}
+
+@media (max-width:900px){
+  .card-row{
+      justify-content:center;
+  }
+  .lesson-card{
+      width:220px;
+  }
+  }
+  
+  @media (max-width:550px){
+  .lesson-card{
+      width:90%;
+  }
+  .page-title{
+      font-size:48px;
+  }
+  }
+
+/* N5 Vocabulary Page */
+
+.back-text {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+  text-decoration: none;
+  color: #111;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.vocab-header {
+  text-align: center;
+  padding: 50px 20px 6px;
+}
+
+.vocab-header h1 {
+  font-size: 40px;
+  color: #c2185b;
+  font-family: "Times New Roman", "Yu Mincho", serif;
+  text-shadow: 2px 2px 8px rgba(255,255,255,.9);
+}
+
+.vocab-header p {
+  margin-top: 8px;
+  font-size:30px;
+  color: #333;
+  font-weight: bold;
+}
+
+.vocab-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 10px auto 90px;
+}
+
+.vocab-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+
+.vocab-item {
+  text-decoration: none;
+  background: rgba(255,255,255,.58);
+  border-radius: 20px;
+  padding: 24px 15px;
+  text-align: center;
+  color: #16224a;
+  box-shadow: 0 12px 30px rgba(0,0,0,.15);
+  border: 1px solid rgba(255,255,255,.65);
+  backdrop-filter: blur(8px);
+  transition: .3s;
+}
+
+.vocab-item:hover {
+  transform: translateY(-6px);
+  background: rgb(255, 255, 255);
+}
+
+.vocab-item strong {
+  display: block;
+  font-size: 21px;
+  margin-bottom: 6px;
+}
+
+.vocab-item small {
+  font-size: 14px;
+  color: #666;
+}
+
+.big-jp {
+  display: block;
+  font-size: 28px;
+  color: #e84f91;
+  margin-bottom: 6px;
+  font-family: "Yu Mincho", serif;
+}
+
+.test-item {
+  background: rgba(232,79,145,.85);
+  color: white;
+}
+
+.test-item small {
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .vocab-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .vocab-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vocab-header h1 {
+    font-size: 38px;
+  }
+}
+.study-page{
+  background: linear-gradient(
+      180deg,
+      #f8f6f7 0%,
+      #f7f8fc 100%
+  );
+}
+/*hiragana, katagana, baihoc card*/
+.lesson-container{
+  display:grid;
+  grid-template-columns:repeat(5, 210px);
+  justify-content:center;
+  gap:30px;
+  margin-top:50px;
+}
+
+.lesson-card{
+  text-decoration:none;
+  color:#16224a;
+  background:#faeff3;      /* Nền hồng pastel nhạt */
+  border:1px solid #ffd6e7;
+  border-radius:24px;
+  padding:25px 18px;
+  text-align:center;
+  box-shadow:0 15px 35px rgba(0,0,0,.15);
+  transition:.3s;
+  width:200px;
+  height:120px;
+}
+
+.lesson-card:hover{
+  transform:translateY(-12px);
+  box-shadow:0 25px 50px rgba(0,0,0,.25);
+}
+
+.lesson-card .icon{
+  font-size:60px;
+  margin-bottom:10px;
+}
+
+.lesson-card h3{
+  margin:10px 0 6px;
+  color:#d01b68;
+  font-size:28px;
+}
+
+.lesson-card p{
+  margin:0;
+  font-size:24px;
+  font-weight:bold;
+}
+
+.test-card h3{
+  color:#1e4aa5;
+}
+
+/*Hiragana*/
+.kana-layout{
+  display:flex;
+  gap:50px;
+  justify-content:center;
+  align-items:flex-start;
+  margin:20px auto 80px;
+}
+
+.kana-section{
+  display:flex;
+  flex-direction:column;
+}
+
+.kana-grid{
+  display:grid;
+  gap:10px;
+}
+
+.kana-grid.basic,
+.kana-grid.dakuten{
+  grid-template-columns:repeat(5, 70px);
+}
+
+.kana-grid.yoon{
+  grid-template-columns:repeat(3, 70px);
+  gap:10px 32px;
+}
+
+.kana-empty{
+  width:70px;
+  height:70px;
+  visibility:hidden;
+}
+
+.kana-card{
+  width:70px;
+  height:70px;
+  background:#fff;
+  border:1px solid #f76ec9ea;
+  cursor:pointer;
+  text-align:center;
+  transition:.25s;
+}
+
+.kana-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 12px 25px rgba(0,0,0,.18);
+  background:#fff6fa;
+}
+
+.kana-card span{
+  display:block;
+  font-size:32px;
+  font-weight:bold;
+}
+
+.kana-card small{
+  display:block;
+  font-size:16px;
+  color:#aa1478d7;
+}
+
+.kana-modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.45);
+  justify-content:center;
+  align-items:center;
+  z-index:999;
+}
+
+.kana-modal.show{
+  display:flex;
+}
+
+.kana-box{
+  width:400px;
+  background:white;
+  border-radius:10px;
+  padding:25px;
+  text-align:center;
+  position:relative;
+}
+
+.close-btn{
+  position:absolute;
+  top:-12px;
+  right:-12px;
+  width:28px;
+  height:28px;
+  border-radius:50%;
+  border:none;
+  background:#111;
+  color:white;
+  font-size:20px;
+  cursor:pointer;
+}
+
+.stroke-demo{
+  font-size:150px;
+  line-height:1;
+  font-family:"Yu Mincho", serif;
+}
+
+.kana-reading{
+  font-size:40px;
+  color:#be0db0;
+  margin:10px 0 20px;
+}
+
+.sound-btn{
+  border:none;
+  background:#f357e6;
+  color:white;
+
+  width:56px;
+  height:56px;
+  border-radius:50%;
+
+  cursor:pointer;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  margin:15px auto;
+}
+
+.speaker-icon{
+  font-size:30px;
+  line-height:1;
+}
+.stroke-area{
+  width:230px;
+  height:230px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+
+.stroke-area svg{
+  width:230px !important;
+  height:230px !important;
+  display:block;
+}
+
+.close-btn{
+  z-index:9999;
+}
+.gray-kana{
+  font-family: "Noto Sans JP", "Yu Gothic", "Meiryo", sans-serif;
+  font-size: 130px;
+  font-weight: 500;
+  color: #222;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 1;
+}
+.small-kana{
+  font-size: 0.65em;
+  vertical-align: 0.15em;
+}
+.modal-content{
+    position:relative;
+}
+
+.kana-nav{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:46px;
+    height:46px;
+    border:none;
+    background:transparent;
+    font-size:42px;
+    color:#c714a0;
+    cursor:pointer;
+    z-index:100;
+}
+
+.kana-nav.prev{
+    left:15px;
+}
+
+.kana-nav.next{
+    right:15px;
+}
+
+.kana-nav:hover{
+    transform:translateY(-50%) scale(1.15);
+}
+.sound-btn.playing{
+  transform:scale(0.9);
+  box-shadow:0 0 0 8px rgba(190,13,176,.18);
+}
+
+.sound-btn.playing .speaker-icon{
+  animation:soundPulse .35s ease;
+}
+
+@keyframes soundPulse{
+  0%{ transform:scale(1); }
+  50%{ transform:scale(1.25); }
+  100%{ transform:scale(1); }
+}
