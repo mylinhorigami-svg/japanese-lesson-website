@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Test từ vựng N5</title>
+
+    <link
+        rel="stylesheet"
+        href="../../../../style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="test.css"
+    >
+</head>
+
+<body class="study-page">
+
+    <!-- Logo -->
+    <div class="bottom-brand">
+
+        <a
+            href="../../../../index.html"
+            class="brand-link"
+        >
+            <img
+                src="../../../../images/logo1.png"
+                class="brand-logo"
+                alt="Logo"
+            >
+
+            <span class="brand-title">
+                Học tiếng Nhật cùng Linh
+            </span>
+        </a>
+
+    </div>
+
+
+    <!-- Nút quay lại -->
+    <a
+        href="../n5-vocab.html"
+        class="back-text"
+    >
+        ⬅️
+    </a>
+
+
+    <!-- Tiêu đề -->
+    <header class="vocab-header">
+
+        <h1 id="testPageTitle">
+            Test từ vựng N5
+        </h1>
+
+    </header>
+
+
+    <main class="test-page">
+
+        <!-- Danh sách đề -->
+        <section id="testListScreen">
+
+            <div
+                id="testList"
+                class="test-list"
+            ></div>
+
+        </section>
+
+
+        <!-- Khung câu hỏi -->
+        <section
+            id="testQuestionScreen"
+            hidden
+        >
+
+            <div class="test-question-box">
+
+                <div
+                    id="testInstruction"
+                    class="test-instruction"
+                >
+                    Chọn đáp án đúng
+                </div>
+
+                <div
+                    id="testQuestionCounter"
+                    class="test-question-counter"
+                ></div>
+
+                <div
+                    id="testQuestionText"
+                    class="test-question-text"
+                ></div>
+
+                <div
+                    id="testAnswerList"
+                    class="test-answer-list"
+                ></div>
+
+                <button
+                    id="testNextBtn"
+                    class="test-next-btn"
+                    type="button"
+                    disabled
+                >
+                    Next
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Màn hình kết quả -->
+        <section
+            id="testResultScreen"
+            hidden
+        >
+
+            <div class="test-result-box">
+
+                <h2
+                    id="testResultTitle"
+                    class="test-result-title"
+                ></h2>
+
+                <div
+                    id="testResultQuestionList"
+                    class="test-result-question-list"
+                ></div>
+
+                <button
+                    id="testCloseBtn"
+                    class="test-close-btn"
+                    type="button"
+                >
+                    Close
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Dữ liệu phải tải trước test.js -->
+    <script src="testdata.js"></script>
+
+    <!-- JavaScript xử lý bài test -->
+    <script src="test.js"></script>
+
+</body>
+
+</html>

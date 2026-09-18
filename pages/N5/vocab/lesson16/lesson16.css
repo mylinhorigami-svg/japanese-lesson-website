@@ -1,0 +1,177 @@
+/* Khung chứa câu ví dụ và tooltip */
+.vocab-example-wrapper,
+.table-example-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.vocab-example-wrapper {
+  margin-top: 14px;
+}
+
+.table-example-wrapper {
+  display: inline-block;
+}
+
+/* Dòng câu ví dụ */
+.vocab-example,
+.table-example {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  width: 100%;
+}
+
+/* Nội dung câu ví dụ */
+.vocab-example-text,
+.table-example-text {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #940681;
+  font-weight:500;
+}
+
+
+/* CÁC NÚT LOA */
+
+.example-sound-btn,
+.table-example-sound-btn,
+.table-sound-btn {
+  border: none;
+  background: transparent;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform .2s ease;
+}
+
+.example-sound-btn:hover,
+.table-example-sound-btn:hover,
+.table-sound-btn:hover {
+  transform: scale(1.15);
+}
+
+.example-sound-btn.playing,
+.table-example-sound-btn.playing,
+.table-sound-btn.playing {
+  animation: soundPulse 0.45s ease;
+}
+
+@keyframes soundPulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.18);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/*  KANA VÀ NÚT LOA TRONG BẢNG */
+
+.table-kana-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  width: 100%;
+}
+
+.table-kana-text {
+  font-size: inherit;
+}
+
+
+/* Ô CÂU VÍ DỤ TRONG BẢNG */
+
+.table-example-cell {
+  min-width: 260px;
+}
+
+/*TOOLTIP NGHĨA CÂU VÍ DỤ */
+
+.vocab-example-tooltip,
+.table-example-tooltip {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 10px);
+
+  width: max-content;
+  max-width: 400px;
+  padding: 9px 12px;
+
+  background: #5f595e;
+  color: #fff;
+  border-radius: 9px;
+
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transform:
+    translateX(-50%)
+    translateY(5px);
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s ease;
+}
+
+/* Tooltip trên thẻ */
+.vocab-example-tooltip {
+  z-index: 20;
+}
+
+/* Tooltip trong bảng */
+.table-example-tooltip {
+  z-index: 30;
+}
+.vocab-example-kana,
+.table-example-kana{
+  color:#fcfdfd;
+  font-size:15px;
+  margin-bottom:6px;
+  line-height:1.5;
+}
+
+/* Mũi tên dưới tooltip */
+.vocab-example-tooltip::after,
+.table-example-tooltip::after {
+  content: "";
+
+  position: absolute;
+  top: 100%;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  border: 7px solid transparent;
+  border-top-color: #3d2d3a;
+}
+
+/* Hiển thị tooltip khi rê chuột */
+.vocab-example-wrapper:hover
+.vocab-example-tooltip,
+.table-example-wrapper:hover
+.table-example-tooltip {
+  opacity: 1;
+  visibility: visible;
+
+  transform:
+    translateX(-50%)
+    translateY(0);
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lesson 2 - Từ vựng</title>
+
+    <!-- CSS dùng chung -->
+    <link rel="stylesheet" href="../../../../style.css">
+
+    <!-- CSS riêng của Lesson 2 -->
+    <link rel="stylesheet" href="lesson2.css">
+</head>
+
+<body class="study-page">
+
+    <!-- Logo -->
+    <div class="bottom-brand">
+        <a href="../../../../index.html" class="brand-link">
+            <img src="../../../../images/logo1.png"
+                 class="brand-logo"
+                 alt="Logo">
+            <span class="brand-title">Học tiếng Nhật cùng Linh</span>
+        </a>
+    </div>
+
+    <!-- Nút quay lại -->
+    <a href="../n5-vocab.html" class="back-text">⬅️</a>
+
+    <!-- Tiêu đề -->
+    <header class="vocab-header">
+        <h1>Từ vựng bài 2</h1>
+    </header>
+
+    <!-- Danh sách từ vựng -->
+    <section class="vocab-section">
+
+        <div id="lesson2VocabGrid" class="vocab-grid">
+
+            <!-- lesson2.js sẽ tự tạo các thẻ từ vựng -->
+
+        </div>
+
+    </section>
+    <section class="vocab-table-section">
+
+    <table class="lesson2-table">
+        <thead>
+            <tr>
+                <th>Từ vựng</th>
+                <th>Kanji</th>
+                <th>Romaji</th>
+                <th>Nghĩa</th>
+                <th>Âm thanh</th>
+            </tr>
+        </thead>
+
+        <tbody id="lesson2TableBody">
+            <!-- lesson2.js sẽ tự tạo dữ liệu -->
+        </tbody>
+    </table>
+</section>
+
+<section class="flashcard-section">
+
+  <button id="flashcardToggleBtn" class="flashcard-toggle-btn"> 🃏 Flashcard </button>
+
+  <div id="flashcardContainer" class="flashcard-container" hidden>
+
+    <div id="flashcardCard" class="flashcard-card" role="button" tabindex="0">
+
+      <button id="flashcardPrev"
+              class="flashcard-nav-btn flashcard-prev"
+              type="button">
+        ❮
+      </button>
+      <div id="flashcardCounter" class="flashcard-counter"></div>
+
+      <div id="flashcardContent"></div>
+
+      <button id="flashcardNext"
+              class="flashcard-nav-btn flashcard-next"
+              type="button">
+        ❯
+      </button>
+
+      <div id="flashcardHint" class="flashcard-hint"></div>
+
+    </div>
+   </div>
+
+
+<section>
+
+<section class="lesson-practice-section">
+
+  <div id="practiceList" class="practice-list">
+
+    <div class="practice-item">
+      <button class="practice-title-btn" onclick="togglePractice(1, this)">📝 Luyện tập 1</button>
+      <div class="practice-panel"></div>
+    </div>
+
+    <div class="practice-item">
+      <button class="practice-title-btn" onclick="togglePractice(2, this)">📝 Luyện tập 2</button>
+      <div class="practice-panel"></div>
+    </div>
+
+    <div class="practice-item">
+      <button class="practice-title-btn" onclick="togglePractice(3, this)">📝 Luyện tập 3</button>
+      <div class="practice-panel"></div>
+    </div>
+
+    <div class="practice-item">
+      <button class="practice-title-btn" onclick="togglePractice(4, this)">📝 Luyện tập 4</button>
+      <div class="practice-panel"></div>
+    </div>
+
+  </div>
+
+</section>
+    
+    <!-- JS dùng chung -->
+    <script src="../../../../script.js"></script>
+
+    <!-- JS riêng của Lesson 2 -->
+    <script src="lesson2.js"></script>
+
+</body>
+
+</html>
