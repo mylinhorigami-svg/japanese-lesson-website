@@ -1,10 +1,18 @@
+
 @media (max-width: 768px) {
 
     html,
     body {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        overflow-x: clip !important;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
     }
 
     body {
@@ -66,10 +74,11 @@
     /* Trang chủ */
 
     .level-container {
-        width: calc(100% - 28px);
-        margin: 20px auto 80px;
-        grid-template-columns: 1fr;
-        gap: 16px;
+        width: calc(100% - 28px) !important;
+        max-width: 100% !important;
+        margin: 20px auto 80px !important;
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
     }
 
     .level-card {
@@ -100,10 +109,12 @@
     /* Danh sách từ vựng và ngữ pháp */
 
     .lesson-container {
-        width: calc(100% - 28px);
-        margin: 24px auto 90px;
-        grid-template-columns: 1fr;
-        gap: 14px;
+        width: calc(100% - 28px) !important;
+        max-width: 100% !important;
+        margin: 24px auto 90px !important;
+        padding: 0 !important;
+        grid-template-columns: 1fr !important;
+        gap: 14px !important;
     }
 
     .lesson-container > .lesson-card {
@@ -115,10 +126,11 @@
         align-items: center;
         justify-content: center;
 
-        width: 100%;
-        height: auto;
-        min-height: 180px;
-        margin: 0;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        min-height: 180px !important;
+        margin: 0 !important;
 
         touch-action: manipulation;
     }
@@ -218,30 +230,103 @@
     /* Hiragana và Katakana */
 
     .kana-layout,
-    .kana-main-area,
+    .kana-main-area {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 20px auto 90px !important;
+        padding: 0 8px !important;
+    }
+
     .kana-section {
-        width: 100%;
-        max-width: 100%;
-        padding-left: 6px;
-        padding-right: 6px;
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto 30px !important;
+        padding: 0 !important;
     }
 
     .kana-grid.basic,
     .kana-grid.dakuten {
-        grid-template-columns: repeat(5, minmax(0, 1fr));
-        gap: 5px;
+        display: grid !important;
+        grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+        width: 100% !important;
+        max-width: 390px !important;
+        margin: 0 auto !important;
+        gap: 5px !important;
     }
 
-    .kana-grid.combination {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 6px;
+    .kana-grid.yoon {
+        display: grid !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        width: 100% !important;
+        max-width: 300px !important;
+        margin: 0 auto !important;
+        gap: 8px !important;
     }
 
     .kana-card {
-        width: 100%;
-        min-width: 0;
-        padding-left: 2px;
-        padding-right: 2px;
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 1 / 1;
+        padding: 4px 1px !important;
+    }
+
+    .kana-card span {
+        font-size: clamp(23px, 8vw, 32px) !important;
+        line-height: 1.25 !important;
+        white-space: nowrap;
+    }
+
+    .kana-card small {
+        font-size: clamp(12px, 4vw, 16px) !important;
+        line-height: 1.1 !important;
+    }
+
+    .kana-empty {
+        width: 100% !important;
+        min-width: 0 !important;
+        height: auto !important;
+        aspect-ratio: 1 / 1;
+    }
+
+    .kana-box {
+        width: calc(100vw - 30px) !important;
+        max-width: 400px !important;
+        padding: 20px 14px !important;
+    }
+
+    .stroke-area {
+        width: min(230px, 70vw) !important;
+        height: min(230px, 70vw) !important;
+    }
+
+    .stroke-area svg {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .practice-section {
+        width: calc(100% - 24px) !important;
+        max-width: 760px !important;
+        margin: 30px auto 90px !important;
+    }
+
+    .practice-content {
+        padding: 18px 12px !important;
+    }
+
+    .answer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+
+    .answer-btn {
+        width: 100% !important;
+        max-width: 280px !important;
+        margin: 0 auto !important;
     }
 
     /* Ngữ pháp */
@@ -290,127 +375,5 @@
     button,
     [role="button"] {
         -webkit-tap-highlight-color: rgba(217, 39, 121, 0.16);
-    }
-}
-@media (max-width: 768px) {
-
-    html,
-    body {
-        width: 100% !important;
-        max-width: 100% !important;
-        margin: 0 !important;
-        overflow-x: hidden !important;
-    }
-
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-    }
-
-    img,
-    svg,
-    video,
-    canvas {
-        max-width: 100% !important;
-        height: auto !important;
-    }
-
-    /* Trang chủ */
-
-    .level-container {
-        width: calc(100% - 28px) !important;
-        max-width: 100% !important;
-        grid-template-columns: 1fr !important;
-        margin: 24px auto 80px !important;
-        gap: 16px !important;
-    }
-
-    .level-card {
-        width: 100% !important;
-        max-width: 100% !important;
-    }
-
-    /* Trang N5 */
-
-    .card-container {
-        width: calc(100% - 28px) !important;
-        max-width: 100% !important;
-        margin: 24px auto 80px !important;
-    }
-
-    .card-row,
-    .card-row.center-row {
-        display: grid !important;
-        grid-template-columns: 1fr !important;
-        width: 100% !important;
-        gap: 14px !important;
-    }
-
-    .card-row .lesson-card {
-        width: 100% !important;
-        max-width: 100% !important;
-        height: auto !important;
-        margin: 0 !important;
-    }
-
-    /* Danh sách bài học */
-
-    .lesson-container {
-        display: grid !important;
-        grid-template-columns: 1fr !important;
-
-        width: calc(100% - 28px) !important;
-        max-width: 100% !important;
-
-        margin: 24px auto 90px !important;
-        padding: 0 !important;
-        gap: 14px !important;
-    }
-
-    .lesson-container > .lesson-card {
-        width: 100% !important;
-        max-width: 100% !important;
-
-        height: auto !important;
-        min-height: 180px !important;
-
-        margin: 0 !important;
-        padding: 20px 14px !important;
-    }
-
-    /* Các trang bài học */
-
-    .vocab-section,
-    .flashcard-section,
-    .lesson-practice-section,
-    .grammar-container,
-    .grammar-pattern-section,
-    .grammar-practice-section,
-    .test-page {
-        width: 100% !important;
-        max-width: 100% !important;
-
-        margin-left: auto !important;
-        margin-right: auto !important;
-
-        padding-left: 12px !important;
-        padding-right: 12px !important;
-    }
-
-    .vocab-grid {
-        grid-template-columns: 1fr !important;
-        width: 100% !important;
-        gap: 12px !important;
-    }
-
-    .vocab-card,
-    .flashcard-card,
-    .practice-card,
-    .grammar-pattern-card,
-    .test-question-box {
-        width: 100% !important;
-        min-width: 0 !important;
-        max-width: 100% !important;
     }
 }
