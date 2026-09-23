@@ -1,0 +1,299 @@
+@media (max-width: 768px) {
+    body {
+        border: 8px solid red !important;
+    }
+}
+@media (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        min-height: 100svh;
+        background-attachment: scroll;
+    }
+
+    img,
+    svg,
+    video,
+    canvas {
+        max-width: 100%;
+        height: auto;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+        font: inherit;
+        max-width: 100%;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 16px;
+    }
+
+    button,
+    select,
+    input[type="button"],
+    input[type="submit"] {
+        min-height: 44px;
+    }
+
+    /* Tiêu đề */
+
+    .hero,
+    .page-header,
+    .vocab-header {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero h1,
+    .page-title,
+    .vocab-header h1 {
+        font-size: clamp(28px, 8vw, 42px);
+        overflow-wrap: anywhere;
+    }
+
+    .jp-title,
+    .page-sub,
+    .page-sub-vn {
+        font-size: clamp(17px, 5vw, 24px);
+    }
+
+    /* Trang chủ */
+
+    .level-container {
+        width: calc(100% - 28px);
+        margin: 20px auto 80px;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .level-card {
+        width: 100%;
+        min-height: 240px;
+    }
+
+    /* Trang N5 */
+
+    .card-container {
+        width: calc(100% - 28px);
+        margin: 20px auto 80px;
+    }
+
+    .card-row,
+    .card-row.center-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .card-row .lesson-card {
+        width: 100%;
+        min-height: 190px;
+        margin: 0;
+    }
+
+    /* Danh sách từ vựng và ngữ pháp */
+
+    .lesson-container {
+        width: calc(100% - 28px);
+        margin: 24px auto 90px;
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .lesson-container > .lesson-card {
+        position: relative;
+        isolation: isolate;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: auto;
+        min-height: 180px;
+        margin: 0;
+
+        touch-action: manipulation;
+    }
+
+    /*
+       Đảm bảo bấm chữ hoặc biểu tượng vẫn mở
+       đúng liên kết của thẻ bao ngoài.
+    */
+
+    .lesson-container > .lesson-card > * {
+        pointer-events: none;
+    }
+
+    /* Nút quay lại */
+
+    .back-home,
+    .back-text {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        min-width: 44px;
+        min-height: 44px;
+        margin: 10px 12px 0;
+        padding: 8px 12px;
+    }
+
+    /* Logo phía dưới */
+
+    .bottom-brand {
+        right: auto;
+        left: 8px;
+        bottom: 8px;
+        max-width: calc(100vw - 16px);
+    }
+
+    .brand-logo {
+        width: 50px;
+    }
+
+    .brand-title {
+        max-width: calc(100vw - 30px);
+        overflow: hidden;
+        font-size: 14px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    /* Từ vựng */
+
+    .vocab-section,
+    .flashcard-section,
+    .lesson-practice-section,
+    .grammar-container,
+    .test-page {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .vocab-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .vocab-card,
+    .flashcard-card,
+    .practice-card,
+    .grammar-pattern-card,
+    .test-question-box {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    /* Bảng từ vựng */
+
+    .vocab-table-section,
+    .table-wrapper,
+    .grammar-table-wrap {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .lesson-table {
+        min-width: 650px;
+    }
+
+    /* Hiragana và Katakana */
+
+    .kana-layout,
+    .kana-main-area,
+    .kana-section {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .kana-grid.basic,
+    .kana-grid.dakuten {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 5px;
+    }
+
+    .kana-grid.combination {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 6px;
+    }
+
+    .kana-card {
+        width: 100%;
+        min-width: 0;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    /* Ngữ pháp */
+
+    .grammar-lesson-header {
+        grid-template-columns: 44px minmax(0, 1fr) 44px;
+        gap: 6px;
+    }
+
+    .grammar-lesson-title {
+        font-size: clamp(20px, 6vw, 30px);
+        overflow-wrap: anywhere;
+    }
+
+    .grammar-pattern-list,
+    .practice-list,
+    .test-list {
+        grid-template-columns: 1fr;
+    }
+
+    /* Cửa sổ bài tập */
+
+    dialog,
+    .modal,
+    .popup,
+    .practice-modal,
+    .test-modal {
+        width: calc(100vw - 20px);
+        max-width: calc(100vw - 20px);
+        max-height: calc(100svh - 20px);
+    }
+}
+
+
+/* Chỉ dành cho thiết bị cảm ứng */
+
+@media (hover: none) and (pointer: coarse) {
+
+    .lesson-card:hover,
+    .level-card:hover,
+    .vocab-card:hover {
+        transform: none;
+    }
+
+    a,
+    button,
+    [role="button"] {
+        -webkit-tap-highlight-color: rgba(217, 39, 121, 0.16);
+    }
+}
