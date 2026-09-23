@@ -1368,7 +1368,9 @@ function createPracticeExampleHTML(example) {
                     ? `
                         <div class="grammar-practice-example-image">
                             <img
-                                src="${example.image}"
+                                src="${location.pathname.startsWith('/japanese-lesson-website/')
+    ? '/japanese-lesson-website' + example.image
+    : example.image}"
                                 alt="${example.imageAlt || ""}"
                             >
                         </div>
