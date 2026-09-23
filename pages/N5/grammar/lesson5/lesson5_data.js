@@ -694,7 +694,7 @@ const grammarLessonData = {
         {
             title: "Luyện tập 6",
             example: {
-                image: "../../../../assets/images/grammar_n5_lesson5/practice7.jpg",
+                image: "/assets/images/grammar_n5_lesson5/practice7.jpg",
                 content: "毎朝[まいあさ]　何時[なんじ]に　会社[かいしゃ]へ　行[い]きますか。<strong>7時半[じはん]に　行[い]きます。</strong>" ,
             },
 
