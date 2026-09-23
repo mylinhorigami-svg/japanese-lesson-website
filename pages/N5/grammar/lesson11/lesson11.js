@@ -1380,6 +1380,7 @@ function createPracticeExampleHTML(example) {
 
             <div class="grammar-practice-example-label">
                 Ví dụ
+
             </div>
 
             <div class="grammar-practice-example-content">
