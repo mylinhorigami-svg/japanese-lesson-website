@@ -170,16 +170,34 @@ const Lesson1Table = [
     meaning: "Người"
 },
 {
+    kanji: "あの人",
+    kana: "あのひと",
+    romaji: "anohito",
+    meaning: "Người"
+},
+{
     kanji: "方",
     kana: "かた",
     romaji: "kata",
     meaning: "Vị (cách nói lịch sự của ひと)"
 },
 {
+    kanji: "あの方",
+    kana: "あのかた",
+    romaji: "anokata",
+    meaning: "Vị kia(cách nói lịch sự của ひと)"
+},
+{
     kanji: "皆さん",
     kana: "みなさん",
     romaji: "minasan",
     meaning: "Mọi người"
+},
+{
+    kanji: "人",
+    kana: "ひと",
+    romaji: "hito",
+    meaning: "Người"
 },
 {
     kanji: "",
