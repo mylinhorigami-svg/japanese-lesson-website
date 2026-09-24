@@ -15,7 +15,13 @@ const lesson1Vocab = [
     kanji: "会社員",
     kana: "かいしゃいん",
     romaji: "kaishain",
-    meaning: "Nhân viên công ty"
+    meaning: "Nhân viên công ty (nói chung)"
+  },
+  {
+    kanji: "社員",
+    kana: "しゃいん",
+    romaji: "shain",
+    meaning: "Nhân viên (của công ty nào đó)"
   },
   {
     kanji: "銀行員",
