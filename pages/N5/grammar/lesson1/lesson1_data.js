@@ -232,7 +232,7 @@ const grammarLessonData = {
             "✦ Biểu thị N2 thuộc về N1.",
         ],
         notes: [
-            "Không có lưu ý gì đặc biệt. "
+            "Xem ví dụ bên dưới. "
         ],
         examples: [
             {
@@ -255,10 +255,10 @@ const grammarLessonData = {
             {
                 sentenceParts: [
                     {
-                        text: "➋　そのかさ　は　わたしの　かさ　です。"
+                        text: "➋　わたしは　FPTだいがくの　がくせい　です。"
                     },
                 ],
-                meaning: "Cái ô kia là cái ô của tôi.",
+                meaning: "Tôi là sinh viên của đại học FPT.",
                 audio: "lesson1_010"
             },
         ]
@@ -317,7 +317,7 @@ const grammarLessonData = {
             {
                 sentenceParts: [
                     {
-                        text: "➋　その　"
+                        text: "➋　あの　"
                     },
                     {
                         kanji: "人",
