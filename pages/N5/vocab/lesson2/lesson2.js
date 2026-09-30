@@ -236,6 +236,12 @@ const lesson2Table = [
     meaning: "Thẻ điện thoại"
   },
   {
+    kana: "くるま",
+    kanji: "車",
+    romaji: "kuruma",
+    meaning: "Xe ô tô (thông dụng trong giao tiếp)"
+  },
+  {
     kana: "えいご",
     kanji: "英語",
     romaji: "eigo",
