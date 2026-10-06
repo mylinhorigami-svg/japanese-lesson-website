@@ -251,7 +251,7 @@ const lesson4Table = [
   {
     kana: "べんきょう",
     kanji: "勉強",
-    romaji: "benkyu",
+    romaji: "benkyou",
     meaning: "Việc học"
   },
   {
