@@ -107,6 +107,18 @@ const lesson3Vocab = [
     kanji: "",
     romaji: "wain",
     meaning: "Rượu vang"
+  },
+  {
+    kana: "じどうはんばいき",
+    kanji: "自動販売機",
+    romaji: "jidouhanbaiki",
+    meaning: "Máy bán hàng tự động"
+  },
+  {
+    kana: "パソコン",
+    kanji: "",
+    romaji: "pasokon",
+    meaning: "Máy tính để bàn"
   }
 ];
 const lesson3Table = [
