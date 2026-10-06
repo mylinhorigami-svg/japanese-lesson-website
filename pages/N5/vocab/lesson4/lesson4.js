@@ -263,31 +263,31 @@ const lesson4Table = [
   {
     kana: "ニューヨーク",
     kanji: "",
-    romaji: "NyuuYooku",
+    romaji: "nyuuYooku",
     meaning: "New York"
   },
   {
     kana: "ペキン",
     kanji: "",
-    romaji: "Pekin",
+    romaji: "pekin",
     meaning: "Bắc Kinh"
   },
   {
     kana: "ロンドン",
     kanji: "",
-    romaji: "Rondon",
+    romaji: "rondon",
     meaning: "London"
   },
   {
     kana: "バンコク",
     kanji: "",
-    romaji: "Bankoku",
+    romaji: "bankoku",
     meaning: "Bangkok"
   },
   {
     kana: "ロサンゼルス",
     kanji: "",
-    romaji: "Rosanzerusu",
+    romaji: "rosanzerusu",
     meaning: "Los Angeles"
   }
 ];
