@@ -104,7 +104,7 @@ const grammarLessonData = {
     
     {
         number: 3,
-        pattern: "N1へ　V<span class='remove-masu'>ます</span>／N2に　行きます／来ます／帰ります。",
+        pattern: "N1へ　V<span class='remove-masu'>ます</span>／N2に　行[い]きます／来[き]ます／帰[かえ]ります。",
         detail: {
             meaning: "Đi/đến/trở về N1 để làm V/N2.",
             explanations: [
