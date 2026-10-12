@@ -261,9 +261,21 @@ const lesson4Table = [
     meaning: "Số"
   },
   {
+    kana: "でんわばんごう",
+    kanji: "電話番号",
+    romaji: "denwabangou",
+    meaning: "Số điện thoại"
+  },
+  {
+    kana: "なんばんですか。",
+    kanji: "何番ですか。",
+    romaji: "nanbandesuka",
+    meaning: "Số mấy?"
+  },
+  {
     kana: "ニューヨーク",
     kanji: "",
-    romaji: "nyuuyooku",
+    romaji: "nyuuYooku",
     meaning: "New York"
   },
   {
