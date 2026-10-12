@@ -146,24 +146,24 @@ const grammarLessonData = {
             },
 
             {
-                title: "Bảng đếm đồ vật mỏng, dạng cuốn, con vật nhỏ",
+                title: "Bảng đếm đồ vật nhỏ, đồ vật lớn, đếm số lần",
                 headers: [
-                    { text: "Đếm vật mỏng", width: "20%" },
+                    { text: "Đếm vật nhỏ", width: "20%" },
                     { text: "Nghĩa", width: "20%" },
-                    { text: "Đếm sách, vở", width: "15%" },
+                    { text: "Đếm đồ vật lớn", width: "15%" },
                     { text: "Nghĩa", width: "15%" },
-                    { text: "Đếm con vật nhỏ", width: "15%" },
+                    { text: "Đếm số lần", width: "15%" },
                     { text: "Nghĩa", width: "15%" },
                 ],
 
                 rows: [
                     {
-                        number: "いちまい",
-                        numberReading: "1 miếng (tờ)",
-                        age: "いちさつ",
-                        ageReading: "1 cuốn",
-                        times: "いっぴき",
-                        timesReading: "1 con",
+                        number: "いっこ",
+                        numberReading: "1 cái (cục)",
+                        age: "いちだい",
+                        ageReading: "1 cái (chiếc)",
+                        times: "いっかい",
+                        timesReading: "1 lần",
                     },
                     {
                         number: "にこ",
@@ -352,21 +352,21 @@ const grammarLessonData = {
         {
             sentence: "❶　家[いえ]から　会社[かいしゃ]まで　どのくらい　かかりますか。",
             meaning: "Từ nhà đến công ty mất khoảng bao lâu ?",
-            audio: "lesson11_005",
+            audio: "lesson11_007",
             answer: {
                 sentence: "45分[ふん]ぐらい　かかります。",
                 meaning: "Mất khoảng 45 phút.",
-                audio: "lesson11_006"
+                audio: "lesson11_008"
             }
         },
         {
             sentence: "❷　どのぐらい　日本語[にほんご]を　勉強[べんきょう]しましたか。",
             meaning: "Bạn đã học tiếng Nhật khoảng bao lâu rồi ?",
-            audio: "lesson11_005",
+            audio: "lesson11_009",
             answer: {
                 sentence: "10年[ねん]ぐらい　勉強[べんきょう]しました。",
                 meaning: "Tôi học khoảng 10 năm rồi.",
-                audio: "lesson11_006"
+                audio: "lesson11_010"
             }
         },
         ]
@@ -391,20 +391,20 @@ const grammarLessonData = {
 
            examples: [
             {
-            sentence: "❶　家[うち]から　駅[えき]まで　5分[ふん]だけ　かかります。",
+            sentence: "❶　家[いえ]から　駅[えき]まで　5分[ふん]だけ　かかります。",
             meaning: "Từ nhà tôi đến ga mất chỉ 5 phút.",
-            audio: "lesson11_009",
+            audio: "lesson11_011",
             
         },
         {
             sentence: "❷　一週間[いっしゅうかん]に　何日[なんにち]　休[やす]みますか。",
             meaning: "1 tuần nghỉ mấy ngày ?",
-            audio: "lesson11_010",
+            audio: "lesson11_012",
              answer: 
                 {
                     sentence: "一日[いちにち]だけです。",
                     meaning: "Chỉ có 1 ngày",
-                    audio: "lesson11_011"
+                    audio: "lesson11_013"
                 }          
         },
         ]
