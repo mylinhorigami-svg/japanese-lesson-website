@@ -263,7 +263,7 @@ const lesson4Table = [
   {
     kana: "ニューヨーク",
     kanji: "",
-    romaji: "nyuuYooku",
+    romaji: "nyuuyooku",
     meaning: "New York"
   },
   {
