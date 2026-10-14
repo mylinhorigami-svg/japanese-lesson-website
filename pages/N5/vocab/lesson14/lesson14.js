@@ -197,6 +197,12 @@ const lessonTable = [
     kanji: "お釣り",
     romaji: "otsuri",
     meaning: "Tiền thừa, tiền trả lại"
+  },
+  {
+    kana: "けっこうです。",
+    kanji: "結構です。",
+    romaji: "kekkou desu",
+    meaning: "Được rồi, không cần đâu."
   }
 ];
 
