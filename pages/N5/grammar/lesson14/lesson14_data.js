@@ -499,7 +499,7 @@ const grammarLessonData = {
                 }          
         },
          {
-            sentence: "❷　今[いま]、雨[あめ]が　降[ふ]っていますか。",
+            sentence: "➌　今[いま]、雨[あめ]が　降[ふ]っていますか。",
             meaning: "Bây giờ trời đang mua à ?",
             audio: "lesson14_008",
              answer: 
