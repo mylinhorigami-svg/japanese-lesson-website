@@ -92,6 +92,12 @@ const lesson5Table = [
     meaning: "Năm",
   },
   {
+    kana: "せんしゅう",
+    kanji: "先週",
+    romaji: "senshuu",
+    meaning: "Tuần trước"
+  },
+  {
     kana: "こんしゅう",
     kanji: "今週",
     romaji: "konshuu",
