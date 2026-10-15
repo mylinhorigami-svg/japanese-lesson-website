@@ -538,7 +538,7 @@ const grammarLessonData = {
             title: "Luyện tập 2",
             example: {
                 content: [
-                        "今朝[い]　どこへ　行[い]きましたか。（スーパー）→　<strong>スーパーへ　行[い]きました。</strong>",
+                        "今朝[けさ]　どこへ　行[い]きましたか。（スーパー）→　<strong>スーパーへ　行[い]きました。</strong>",
                         ]     
                     },
 
