@@ -355,7 +355,7 @@ const grammarLessonData = {
             }
         },
         {
-            sentence: "❶　今週[こんしゅう]の日曜日[にちようび]　どこへ　行[い]きますか。",
+            sentence: "❷　今週[こんしゅう]の日曜日[にちようび]　どこへ　行[い]きますか。",
             meaning: "Chủ nhật tuần này bạn đi đâu?",
             audio: "lesson5_013",
 
