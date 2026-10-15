@@ -198,6 +198,12 @@ const lesson5Table = [
     kanji: "",
     romaji: "suupaa",
     meaning: "Siêu thị"
+  },
+  {
+    kana: "がっこう",
+    kanji: "学校",
+    romaji: "gakkou",
+    meaning: "Trường học"
   }
 ];
 
