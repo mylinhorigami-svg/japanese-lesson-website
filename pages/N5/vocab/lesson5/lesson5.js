@@ -192,6 +192,12 @@ const lesson5Table = [
     kanji: "家族",
     romaji: "kazoku",
     meaning: "Gia đình"
+  },
+  {
+    kana: "スーパー",
+    kanji: "",
+    romaji: "suupaa",
+    meaning: "Siêu thị"
   }
 ];
 
