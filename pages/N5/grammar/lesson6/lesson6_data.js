@@ -225,7 +225,7 @@ const grammarLessonData = {
 
     {
         number: 4,
-        pattern: "どこで　Nを　Vます。",
+        pattern: "どこで　Nを　Vます　か。",
         detail: {
             meaning: "Làm N ở đâu ?",
             explanations: [
