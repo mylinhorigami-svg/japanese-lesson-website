@@ -56,7 +56,7 @@ const lesson7Vocab = [
   {
     kana: "ホッチキス",
     kanji: "",
-    romaji: "hotchikisu",
+    romaji: "hocchikisu",
     meaning: "Cái dập ghim"
   },
   {
