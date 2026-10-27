@@ -244,7 +244,7 @@ const grammarLessonData = {
             example: {
                 image: "/assets/images/grammar_n5_lesson16/practice2.jpg",
                 content: [
-                        "例[れい]：6時[ろくじ]に　起[お]きて、散歩[さんぽ]して、それから　朝[あさ]ごはんを　食[た]べました。",
+                        "例[れい]：6時[じ]に　起[お]きて、散歩[さんぽ]して、それから　朝[あさ]ごはんを　食[た]べました。",
                         ]     
                     },
 
