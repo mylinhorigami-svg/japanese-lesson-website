@@ -112,7 +112,7 @@ const grammarLessonData = {
         meaning: "Liệt kê tính chất của sự vật, sự việc được nói đến.",
         usages: [
           "✦ Cách nối 2 hay nhiều tính từ đuôi い và tính từ đuôi な",
-           "✦ Không nối 2 hay nhiều tính từ mang nghiawx trái ngược nhau.",
+           "✦ Không nối 2 hay nhiều tính từ mang nghĩa trái ngược nhau.",
         ],
 
         examples: [
