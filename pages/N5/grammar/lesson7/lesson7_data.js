@@ -142,7 +142,7 @@ const grammarLessonData = {
 
     {
       number: 2,
-      pattern: "～は　N語で　なんですか。",
+      pattern: "～は　N語[ご]で　なんですか。",
       detail: {
         meaning: "～trong tiếng N gọi là gì ?",
         explanations: [
@@ -158,7 +158,7 @@ const grammarLessonData = {
 
         examples: [
           {
-            sentence: "❶　「ありがとう」は　英語で　なんですか。",
+            sentence: "❶　「ありがとう」は　英語[えいご]で　なんですか。",
             meaning: "「ありがとう」trong tiếng Anh là gì?",
             audio: "lesson7_008",
 
