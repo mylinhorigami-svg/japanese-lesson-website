@@ -54,6 +54,12 @@ const lesson7Vocab = [
     meaning: "Cái kìm"
   },
   {
+    kana: "パンチ",
+    kanji: "",
+    romaji: "panchi",
+    meaning: "Cái đục lổ giấy"
+  },
+  {
     kana: "ホッチキス",
     kanji: "",
     romaji: "hocchikisu",
