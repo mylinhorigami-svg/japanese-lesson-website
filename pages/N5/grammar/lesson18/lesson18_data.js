@@ -272,11 +272,7 @@ const grammarLessonData = {
                         numberReading: "食[た]べる",
                         age: "Ăn",
                     },
-                    {
-                        number: "見[み]ます",
-                        numberReading: "見[み]る",
-                        age: "Xem, nhìn",
-                    },
+
                     {
                         number: "かけます",
                         numberReading: "かける",
