@@ -217,6 +217,18 @@ const lessonTable = [
   meaning: "Thời gian"
 },
 {
+  kana: "やくそく",
+  kanji: "約束",
+  romaji: "yakusoku",
+  meaning: "Cuộc hẹn"
+},
+{
+  kana: "ようじ",
+  kanji: "用事",
+  romaji: "youji",
+  meaning: "Việc bận, việc riêng"
+},
+{
   kana: "たくさん",
   kanji: "",
   romaji: "takusan",
